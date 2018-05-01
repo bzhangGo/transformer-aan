@@ -1,0 +1,636 @@
+/opt/anaconda/anaconda2/lib/python2.7/site-packages/pandas/core/computation/__init__.py:18: UserWarning: The installed version of numexpr 2.4.5.dev0 is not supported in pandas and will be not be used
+The minimum supported version is 2.4.6
+
+  ver=ver, min_ver=_MIN_NUMEXPR_VERSION), UserWarning)
+INFO:tensorflow:Read from checkpoint /home/bzhang/.pro/.lib/neumt/network/transformer/wmten-de/work-extreme-transformer-target-ftn/github_submit//train/model.ckpt-100000
+INFO:tensorflow:Read from checkpoint /home/bzhang/.pro/.lib/neumt/network/transformer/wmten-de/work-extreme-transformer-target-ftn/github_submit//train/model.ckpt-99001
+INFO:tensorflow:Read from checkpoint /home/bzhang/.pro/.lib/neumt/network/transformer/wmten-de/work-extreme-transformer-target-ftn/github_submit//train/model.ckpt-97501
+INFO:tensorflow:Read from checkpoint /home/bzhang/.pro/.lib/neumt/network/transformer/wmten-de/work-extreme-transformer-target-ftn/github_submit//train/model.ckpt-96001
+INFO:tensorflow:Read from checkpoint /home/bzhang/.pro/.lib/neumt/network/transformer/wmten-de/work-extreme-transformer-target-ftn/github_submit//train/model.ckpt-94501
+2018-05-01 06:45:42.350948: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-05-01 06:45:42.589541: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Found device 0 with properties: 
+name: GeForce GTX TITAN X major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:05:00.0
+totalMemory: 11.92GiB freeMemory: 11.81GiB
+2018-05-01 06:45:42.589569: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX TITAN X, pci bus id: 0000:05:00.0, compute capability: 5.2)
+INFO:tensorflow:Averaged checkpoints saved in avg/average
+/opt/anaconda/anaconda2/lib/python2.7/site-packages/pandas/core/computation/__init__.py:18: UserWarning: The installed version of numexpr 2.4.5.dev0 is not supported in pandas and will be not be used
+The minimum supported version is 2.4.6
+
+  ver=ver, min_ver=_MIN_NUMEXPR_VERSION), UserWarning)
+INFO:tensorflow:Restoring model parameters from /home/bzhang/.pro/.lib/neumt/network/transformer/wmten-de/work-extreme-transformer-target-ftn/github_submit/test/avg/transformer.json
+INFO:tensorflow:restoring transformer/source_embedding -> transformer_0/source_embedding:0
+INFO:tensorflow:restoring transformer/target_embedding -> transformer_0/target_embedding:0
+INFO:tensorflow:restoring transformer/bias -> transformer_0/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_0/self_attention/multihead_attention/qkv_transform/matrix -> transformer_0/encoder/layer_0/self_attention/multihead_attention/qkv_transform/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_0/self_attention/multihead_attention/qkv_transform/bias -> transformer_0/encoder/layer_0/self_attention/multihead_attention/qkv_transform/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_0/self_attention/multihead_attention/output_transform/matrix -> transformer_0/encoder/layer_0/self_attention/multihead_attention/output_transform/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_0/self_attention/multihead_attention/output_transform/bias -> transformer_0/encoder/layer_0/self_attention/multihead_attention/output_transform/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_0/self_attention/layer_norm/scale -> transformer_0/encoder/layer_0/self_attention/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/encoder/layer_0/self_attention/layer_norm/offset -> transformer_0/encoder/layer_0/self_attention/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/encoder/layer_0/feed_forward/ffn_layer/input_layer/linear/matrix -> transformer_0/encoder/layer_0/feed_forward/ffn_layer/input_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_0/feed_forward/ffn_layer/input_layer/linear/bias -> transformer_0/encoder/layer_0/feed_forward/ffn_layer/input_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_0/feed_forward/ffn_layer/output_layer/linear/matrix -> transformer_0/encoder/layer_0/feed_forward/ffn_layer/output_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_0/feed_forward/ffn_layer/output_layer/linear/bias -> transformer_0/encoder/layer_0/feed_forward/ffn_layer/output_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_0/feed_forward/layer_norm/scale -> transformer_0/encoder/layer_0/feed_forward/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/encoder/layer_0/feed_forward/layer_norm/offset -> transformer_0/encoder/layer_0/feed_forward/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/encoder/layer_1/self_attention/multihead_attention/qkv_transform/matrix -> transformer_0/encoder/layer_1/self_attention/multihead_attention/qkv_transform/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_1/self_attention/multihead_attention/qkv_transform/bias -> transformer_0/encoder/layer_1/self_attention/multihead_attention/qkv_transform/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_1/self_attention/multihead_attention/output_transform/matrix -> transformer_0/encoder/layer_1/self_attention/multihead_attention/output_transform/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_1/self_attention/multihead_attention/output_transform/bias -> transformer_0/encoder/layer_1/self_attention/multihead_attention/output_transform/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_1/self_attention/layer_norm/scale -> transformer_0/encoder/layer_1/self_attention/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/encoder/layer_1/self_attention/layer_norm/offset -> transformer_0/encoder/layer_1/self_attention/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/encoder/layer_1/feed_forward/ffn_layer/input_layer/linear/matrix -> transformer_0/encoder/layer_1/feed_forward/ffn_layer/input_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_1/feed_forward/ffn_layer/input_layer/linear/bias -> transformer_0/encoder/layer_1/feed_forward/ffn_layer/input_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_1/feed_forward/ffn_layer/output_layer/linear/matrix -> transformer_0/encoder/layer_1/feed_forward/ffn_layer/output_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_1/feed_forward/ffn_layer/output_layer/linear/bias -> transformer_0/encoder/layer_1/feed_forward/ffn_layer/output_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_1/feed_forward/layer_norm/scale -> transformer_0/encoder/layer_1/feed_forward/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/encoder/layer_1/feed_forward/layer_norm/offset -> transformer_0/encoder/layer_1/feed_forward/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/encoder/layer_2/self_attention/multihead_attention/qkv_transform/matrix -> transformer_0/encoder/layer_2/self_attention/multihead_attention/qkv_transform/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_2/self_attention/multihead_attention/qkv_transform/bias -> transformer_0/encoder/layer_2/self_attention/multihead_attention/qkv_transform/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_2/self_attention/multihead_attention/output_transform/matrix -> transformer_0/encoder/layer_2/self_attention/multihead_attention/output_transform/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_2/self_attention/multihead_attention/output_transform/bias -> transformer_0/encoder/layer_2/self_attention/multihead_attention/output_transform/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_2/self_attention/layer_norm/scale -> transformer_0/encoder/layer_2/self_attention/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/encoder/layer_2/self_attention/layer_norm/offset -> transformer_0/encoder/layer_2/self_attention/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/encoder/layer_2/feed_forward/ffn_layer/input_layer/linear/matrix -> transformer_0/encoder/layer_2/feed_forward/ffn_layer/input_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_2/feed_forward/ffn_layer/input_layer/linear/bias -> transformer_0/encoder/layer_2/feed_forward/ffn_layer/input_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_2/feed_forward/ffn_layer/output_layer/linear/matrix -> transformer_0/encoder/layer_2/feed_forward/ffn_layer/output_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_2/feed_forward/ffn_layer/output_layer/linear/bias -> transformer_0/encoder/layer_2/feed_forward/ffn_layer/output_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_2/feed_forward/layer_norm/scale -> transformer_0/encoder/layer_2/feed_forward/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/encoder/layer_2/feed_forward/layer_norm/offset -> transformer_0/encoder/layer_2/feed_forward/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/encoder/layer_3/self_attention/multihead_attention/qkv_transform/matrix -> transformer_0/encoder/layer_3/self_attention/multihead_attention/qkv_transform/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_3/self_attention/multihead_attention/qkv_transform/bias -> transformer_0/encoder/layer_3/self_attention/multihead_attention/qkv_transform/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_3/self_attention/multihead_attention/output_transform/matrix -> transformer_0/encoder/layer_3/self_attention/multihead_attention/output_transform/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_3/self_attention/multihead_attention/output_transform/bias -> transformer_0/encoder/layer_3/self_attention/multihead_attention/output_transform/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_3/self_attention/layer_norm/scale -> transformer_0/encoder/layer_3/self_attention/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/encoder/layer_3/self_attention/layer_norm/offset -> transformer_0/encoder/layer_3/self_attention/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/encoder/layer_3/feed_forward/ffn_layer/input_layer/linear/matrix -> transformer_0/encoder/layer_3/feed_forward/ffn_layer/input_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_3/feed_forward/ffn_layer/input_layer/linear/bias -> transformer_0/encoder/layer_3/feed_forward/ffn_layer/input_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_3/feed_forward/ffn_layer/output_layer/linear/matrix -> transformer_0/encoder/layer_3/feed_forward/ffn_layer/output_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_3/feed_forward/ffn_layer/output_layer/linear/bias -> transformer_0/encoder/layer_3/feed_forward/ffn_layer/output_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_3/feed_forward/layer_norm/scale -> transformer_0/encoder/layer_3/feed_forward/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/encoder/layer_3/feed_forward/layer_norm/offset -> transformer_0/encoder/layer_3/feed_forward/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/encoder/layer_4/self_attention/multihead_attention/qkv_transform/matrix -> transformer_0/encoder/layer_4/self_attention/multihead_attention/qkv_transform/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_4/self_attention/multihead_attention/qkv_transform/bias -> transformer_0/encoder/layer_4/self_attention/multihead_attention/qkv_transform/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_4/self_attention/multihead_attention/output_transform/matrix -> transformer_0/encoder/layer_4/self_attention/multihead_attention/output_transform/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_4/self_attention/multihead_attention/output_transform/bias -> transformer_0/encoder/layer_4/self_attention/multihead_attention/output_transform/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_4/self_attention/layer_norm/scale -> transformer_0/encoder/layer_4/self_attention/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/encoder/layer_4/self_attention/layer_norm/offset -> transformer_0/encoder/layer_4/self_attention/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/encoder/layer_4/feed_forward/ffn_layer/input_layer/linear/matrix -> transformer_0/encoder/layer_4/feed_forward/ffn_layer/input_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_4/feed_forward/ffn_layer/input_layer/linear/bias -> transformer_0/encoder/layer_4/feed_forward/ffn_layer/input_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_4/feed_forward/ffn_layer/output_layer/linear/matrix -> transformer_0/encoder/layer_4/feed_forward/ffn_layer/output_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_4/feed_forward/ffn_layer/output_layer/linear/bias -> transformer_0/encoder/layer_4/feed_forward/ffn_layer/output_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_4/feed_forward/layer_norm/scale -> transformer_0/encoder/layer_4/feed_forward/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/encoder/layer_4/feed_forward/layer_norm/offset -> transformer_0/encoder/layer_4/feed_forward/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/encoder/layer_5/self_attention/multihead_attention/qkv_transform/matrix -> transformer_0/encoder/layer_5/self_attention/multihead_attention/qkv_transform/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_5/self_attention/multihead_attention/qkv_transform/bias -> transformer_0/encoder/layer_5/self_attention/multihead_attention/qkv_transform/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_5/self_attention/multihead_attention/output_transform/matrix -> transformer_0/encoder/layer_5/self_attention/multihead_attention/output_transform/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_5/self_attention/multihead_attention/output_transform/bias -> transformer_0/encoder/layer_5/self_attention/multihead_attention/output_transform/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_5/self_attention/layer_norm/scale -> transformer_0/encoder/layer_5/self_attention/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/encoder/layer_5/self_attention/layer_norm/offset -> transformer_0/encoder/layer_5/self_attention/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/encoder/layer_5/feed_forward/ffn_layer/input_layer/linear/matrix -> transformer_0/encoder/layer_5/feed_forward/ffn_layer/input_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_5/feed_forward/ffn_layer/input_layer/linear/bias -> transformer_0/encoder/layer_5/feed_forward/ffn_layer/input_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_5/feed_forward/ffn_layer/output_layer/linear/matrix -> transformer_0/encoder/layer_5/feed_forward/ffn_layer/output_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_5/feed_forward/ffn_layer/output_layer/linear/bias -> transformer_0/encoder/layer_5/feed_forward/ffn_layer/output_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_5/feed_forward/layer_norm/scale -> transformer_0/encoder/layer_5/feed_forward/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/encoder/layer_5/feed_forward/layer_norm/offset -> transformer_0/encoder/layer_5/feed_forward/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/decoder/layer_0/position_forward/ffn_layer/input_layer/linear/matrix -> transformer_0/decoder/layer_0/position_forward/ffn_layer/input_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_0/position_forward/ffn_layer/input_layer/linear/bias -> transformer_0/decoder/layer_0/position_forward/ffn_layer/input_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_0/position_forward/ffn_layer/output_layer/linear/matrix -> transformer_0/decoder/layer_0/position_forward/ffn_layer/output_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_0/position_forward/ffn_layer/output_layer/linear/bias -> transformer_0/decoder/layer_0/position_forward/ffn_layer/output_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_0/position_forward/z_project/matrix -> transformer_0/decoder/layer_0/position_forward/z_project/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_0/position_forward/z_project/bias -> transformer_0/decoder/layer_0/position_forward/z_project/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_0/position_forward/layer_norm/scale -> transformer_0/decoder/layer_0/position_forward/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/decoder/layer_0/position_forward/layer_norm/offset -> transformer_0/decoder/layer_0/position_forward/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/decoder/layer_0/encdec_attention/multihead_attention/q_transform/matrix -> transformer_0/decoder/layer_0/encdec_attention/multihead_attention/q_transform/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_0/encdec_attention/multihead_attention/q_transform/bias -> transformer_0/decoder/layer_0/encdec_attention/multihead_attention/q_transform/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_0/encdec_attention/multihead_attention/kv_transform/matrix -> transformer_0/decoder/layer_0/encdec_attention/multihead_attention/kv_transform/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_0/encdec_attention/multihead_attention/kv_transform/bias -> transformer_0/decoder/layer_0/encdec_attention/multihead_attention/kv_transform/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_0/encdec_attention/multihead_attention/output_transform/matrix -> transformer_0/decoder/layer_0/encdec_attention/multihead_attention/output_transform/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_0/encdec_attention/multihead_attention/output_transform/bias -> transformer_0/decoder/layer_0/encdec_attention/multihead_attention/output_transform/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_0/encdec_attention/layer_norm/scale -> transformer_0/decoder/layer_0/encdec_attention/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/decoder/layer_0/encdec_attention/layer_norm/offset -> transformer_0/decoder/layer_0/encdec_attention/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/decoder/layer_0/feed_forward/ffn_layer/input_layer/linear/matrix -> transformer_0/decoder/layer_0/feed_forward/ffn_layer/input_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_0/feed_forward/ffn_layer/input_layer/linear/bias -> transformer_0/decoder/layer_0/feed_forward/ffn_layer/input_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_0/feed_forward/ffn_layer/output_layer/linear/matrix -> transformer_0/decoder/layer_0/feed_forward/ffn_layer/output_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_0/feed_forward/ffn_layer/output_layer/linear/bias -> transformer_0/decoder/layer_0/feed_forward/ffn_layer/output_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_0/feed_forward/layer_norm/scale -> transformer_0/decoder/layer_0/feed_forward/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/decoder/layer_0/feed_forward/layer_norm/offset -> transformer_0/decoder/layer_0/feed_forward/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/decoder/layer_1/position_forward/ffn_layer/input_layer/linear/matrix -> transformer_0/decoder/layer_1/position_forward/ffn_layer/input_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_1/position_forward/ffn_layer/input_layer/linear/bias -> transformer_0/decoder/layer_1/position_forward/ffn_layer/input_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_1/position_forward/ffn_layer/output_layer/linear/matrix -> transformer_0/decoder/layer_1/position_forward/ffn_layer/output_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_1/position_forward/ffn_layer/output_layer/linear/bias -> transformer_0/decoder/layer_1/position_forward/ffn_layer/output_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_1/position_forward/z_project/matrix -> transformer_0/decoder/layer_1/position_forward/z_project/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_1/position_forward/z_project/bias -> transformer_0/decoder/layer_1/position_forward/z_project/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_1/position_forward/layer_norm/scale -> transformer_0/decoder/layer_1/position_forward/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/decoder/layer_1/position_forward/layer_norm/offset -> transformer_0/decoder/layer_1/position_forward/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/decoder/layer_1/encdec_attention/multihead_attention/q_transform/matrix -> transformer_0/decoder/layer_1/encdec_attention/multihead_attention/q_transform/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_1/encdec_attention/multihead_attention/q_transform/bias -> transformer_0/decoder/layer_1/encdec_attention/multihead_attention/q_transform/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_1/encdec_attention/multihead_attention/kv_transform/matrix -> transformer_0/decoder/layer_1/encdec_attention/multihead_attention/kv_transform/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_1/encdec_attention/multihead_attention/kv_transform/bias -> transformer_0/decoder/layer_1/encdec_attention/multihead_attention/kv_transform/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_1/encdec_attention/multihead_attention/output_transform/matrix -> transformer_0/decoder/layer_1/encdec_attention/multihead_attention/output_transform/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_1/encdec_attention/multihead_attention/output_transform/bias -> transformer_0/decoder/layer_1/encdec_attention/multihead_attention/output_transform/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_1/encdec_attention/layer_norm/scale -> transformer_0/decoder/layer_1/encdec_attention/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/decoder/layer_1/encdec_attention/layer_norm/offset -> transformer_0/decoder/layer_1/encdec_attention/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/decoder/layer_1/feed_forward/ffn_layer/input_layer/linear/matrix -> transformer_0/decoder/layer_1/feed_forward/ffn_layer/input_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_1/feed_forward/ffn_layer/input_layer/linear/bias -> transformer_0/decoder/layer_1/feed_forward/ffn_layer/input_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_1/feed_forward/ffn_layer/output_layer/linear/matrix -> transformer_0/decoder/layer_1/feed_forward/ffn_layer/output_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_1/feed_forward/ffn_layer/output_layer/linear/bias -> transformer_0/decoder/layer_1/feed_forward/ffn_layer/output_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_1/feed_forward/layer_norm/scale -> transformer_0/decoder/layer_1/feed_forward/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/decoder/layer_1/feed_forward/layer_norm/offset -> transformer_0/decoder/layer_1/feed_forward/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/decoder/layer_2/position_forward/ffn_layer/input_layer/linear/matrix -> transformer_0/decoder/layer_2/position_forward/ffn_layer/input_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_2/position_forward/ffn_layer/input_layer/linear/bias -> transformer_0/decoder/layer_2/position_forward/ffn_layer/input_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_2/position_forward/ffn_layer/output_layer/linear/matrix -> transformer_0/decoder/layer_2/position_forward/ffn_layer/output_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_2/position_forward/ffn_layer/output_layer/linear/bias -> transformer_0/decoder/layer_2/position_forward/ffn_layer/output_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_2/position_forward/z_project/matrix -> transformer_0/decoder/layer_2/position_forward/z_project/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_2/position_forward/z_project/bias -> transformer_0/decoder/layer_2/position_forward/z_project/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_2/position_forward/layer_norm/scale -> transformer_0/decoder/layer_2/position_forward/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/decoder/layer_2/position_forward/layer_norm/offset -> transformer_0/decoder/layer_2/position_forward/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/decoder/layer_2/encdec_attention/multihead_attention/q_transform/matrix -> transformer_0/decoder/layer_2/encdec_attention/multihead_attention/q_transform/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_2/encdec_attention/multihead_attention/q_transform/bias -> transformer_0/decoder/layer_2/encdec_attention/multihead_attention/q_transform/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_2/encdec_attention/multihead_attention/kv_transform/matrix -> transformer_0/decoder/layer_2/encdec_attention/multihead_attention/kv_transform/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_2/encdec_attention/multihead_attention/kv_transform/bias -> transformer_0/decoder/layer_2/encdec_attention/multihead_attention/kv_transform/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_2/encdec_attention/multihead_attention/output_transform/matrix -> transformer_0/decoder/layer_2/encdec_attention/multihead_attention/output_transform/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_2/encdec_attention/multihead_attention/output_transform/bias -> transformer_0/decoder/layer_2/encdec_attention/multihead_attention/output_transform/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_2/encdec_attention/layer_norm/scale -> transformer_0/decoder/layer_2/encdec_attention/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/decoder/layer_2/encdec_attention/layer_norm/offset -> transformer_0/decoder/layer_2/encdec_attention/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/decoder/layer_2/feed_forward/ffn_layer/input_layer/linear/matrix -> transformer_0/decoder/layer_2/feed_forward/ffn_layer/input_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_2/feed_forward/ffn_layer/input_layer/linear/bias -> transformer_0/decoder/layer_2/feed_forward/ffn_layer/input_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_2/feed_forward/ffn_layer/output_layer/linear/matrix -> transformer_0/decoder/layer_2/feed_forward/ffn_layer/output_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_2/feed_forward/ffn_layer/output_layer/linear/bias -> transformer_0/decoder/layer_2/feed_forward/ffn_layer/output_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_2/feed_forward/layer_norm/scale -> transformer_0/decoder/layer_2/feed_forward/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/decoder/layer_2/feed_forward/layer_norm/offset -> transformer_0/decoder/layer_2/feed_forward/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/decoder/layer_3/position_forward/ffn_layer/input_layer/linear/matrix -> transformer_0/decoder/layer_3/position_forward/ffn_layer/input_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_3/position_forward/ffn_layer/input_layer/linear/bias -> transformer_0/decoder/layer_3/position_forward/ffn_layer/input_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_3/position_forward/ffn_layer/output_layer/linear/matrix -> transformer_0/decoder/layer_3/position_forward/ffn_layer/output_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_3/position_forward/ffn_layer/output_layer/linear/bias -> transformer_0/decoder/layer_3/position_forward/ffn_layer/output_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_3/position_forward/z_project/matrix -> transformer_0/decoder/layer_3/position_forward/z_project/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_3/position_forward/z_project/bias -> transformer_0/decoder/layer_3/position_forward/z_project/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_3/position_forward/layer_norm/scale -> transformer_0/decoder/layer_3/position_forward/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/decoder/layer_3/position_forward/layer_norm/offset -> transformer_0/decoder/layer_3/position_forward/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/decoder/layer_3/encdec_attention/multihead_attention/q_transform/matrix -> transformer_0/decoder/layer_3/encdec_attention/multihead_attention/q_transform/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_3/encdec_attention/multihead_attention/q_transform/bias -> transformer_0/decoder/layer_3/encdec_attention/multihead_attention/q_transform/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_3/encdec_attention/multihead_attention/kv_transform/matrix -> transformer_0/decoder/layer_3/encdec_attention/multihead_attention/kv_transform/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_3/encdec_attention/multihead_attention/kv_transform/bias -> transformer_0/decoder/layer_3/encdec_attention/multihead_attention/kv_transform/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_3/encdec_attention/multihead_attention/output_transform/matrix -> transformer_0/decoder/layer_3/encdec_attention/multihead_attention/output_transform/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_3/encdec_attention/multihead_attention/output_transform/bias -> transformer_0/decoder/layer_3/encdec_attention/multihead_attention/output_transform/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_3/encdec_attention/layer_norm/scale -> transformer_0/decoder/layer_3/encdec_attention/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/decoder/layer_3/encdec_attention/layer_norm/offset -> transformer_0/decoder/layer_3/encdec_attention/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/decoder/layer_3/feed_forward/ffn_layer/input_layer/linear/matrix -> transformer_0/decoder/layer_3/feed_forward/ffn_layer/input_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_3/feed_forward/ffn_layer/input_layer/linear/bias -> transformer_0/decoder/layer_3/feed_forward/ffn_layer/input_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_3/feed_forward/ffn_layer/output_layer/linear/matrix -> transformer_0/decoder/layer_3/feed_forward/ffn_layer/output_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_3/feed_forward/ffn_layer/output_layer/linear/bias -> transformer_0/decoder/layer_3/feed_forward/ffn_layer/output_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_3/feed_forward/layer_norm/scale -> transformer_0/decoder/layer_3/feed_forward/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/decoder/layer_3/feed_forward/layer_norm/offset -> transformer_0/decoder/layer_3/feed_forward/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/decoder/layer_4/position_forward/ffn_layer/input_layer/linear/matrix -> transformer_0/decoder/layer_4/position_forward/ffn_layer/input_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_4/position_forward/ffn_layer/input_layer/linear/bias -> transformer_0/decoder/layer_4/position_forward/ffn_layer/input_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_4/position_forward/ffn_layer/output_layer/linear/matrix -> transformer_0/decoder/layer_4/position_forward/ffn_layer/output_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_4/position_forward/ffn_layer/output_layer/linear/bias -> transformer_0/decoder/layer_4/position_forward/ffn_layer/output_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_4/position_forward/z_project/matrix -> transformer_0/decoder/layer_4/position_forward/z_project/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_4/position_forward/z_project/bias -> transformer_0/decoder/layer_4/position_forward/z_project/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_4/position_forward/layer_norm/scale -> transformer_0/decoder/layer_4/position_forward/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/decoder/layer_4/position_forward/layer_norm/offset -> transformer_0/decoder/layer_4/position_forward/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/decoder/layer_4/encdec_attention/multihead_attention/q_transform/matrix -> transformer_0/decoder/layer_4/encdec_attention/multihead_attention/q_transform/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_4/encdec_attention/multihead_attention/q_transform/bias -> transformer_0/decoder/layer_4/encdec_attention/multihead_attention/q_transform/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_4/encdec_attention/multihead_attention/kv_transform/matrix -> transformer_0/decoder/layer_4/encdec_attention/multihead_attention/kv_transform/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_4/encdec_attention/multihead_attention/kv_transform/bias -> transformer_0/decoder/layer_4/encdec_attention/multihead_attention/kv_transform/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_4/encdec_attention/multihead_attention/output_transform/matrix -> transformer_0/decoder/layer_4/encdec_attention/multihead_attention/output_transform/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_4/encdec_attention/multihead_attention/output_transform/bias -> transformer_0/decoder/layer_4/encdec_attention/multihead_attention/output_transform/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_4/encdec_attention/layer_norm/scale -> transformer_0/decoder/layer_4/encdec_attention/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/decoder/layer_4/encdec_attention/layer_norm/offset -> transformer_0/decoder/layer_4/encdec_attention/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/decoder/layer_4/feed_forward/ffn_layer/input_layer/linear/matrix -> transformer_0/decoder/layer_4/feed_forward/ffn_layer/input_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_4/feed_forward/ffn_layer/input_layer/linear/bias -> transformer_0/decoder/layer_4/feed_forward/ffn_layer/input_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_4/feed_forward/ffn_layer/output_layer/linear/matrix -> transformer_0/decoder/layer_4/feed_forward/ffn_layer/output_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_4/feed_forward/ffn_layer/output_layer/linear/bias -> transformer_0/decoder/layer_4/feed_forward/ffn_layer/output_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_4/feed_forward/layer_norm/scale -> transformer_0/decoder/layer_4/feed_forward/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/decoder/layer_4/feed_forward/layer_norm/offset -> transformer_0/decoder/layer_4/feed_forward/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/decoder/layer_5/position_forward/ffn_layer/input_layer/linear/matrix -> transformer_0/decoder/layer_5/position_forward/ffn_layer/input_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_5/position_forward/ffn_layer/input_layer/linear/bias -> transformer_0/decoder/layer_5/position_forward/ffn_layer/input_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_5/position_forward/ffn_layer/output_layer/linear/matrix -> transformer_0/decoder/layer_5/position_forward/ffn_layer/output_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_5/position_forward/ffn_layer/output_layer/linear/bias -> transformer_0/decoder/layer_5/position_forward/ffn_layer/output_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_5/position_forward/z_project/matrix -> transformer_0/decoder/layer_5/position_forward/z_project/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_5/position_forward/z_project/bias -> transformer_0/decoder/layer_5/position_forward/z_project/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_5/position_forward/layer_norm/scale -> transformer_0/decoder/layer_5/position_forward/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/decoder/layer_5/position_forward/layer_norm/offset -> transformer_0/decoder/layer_5/position_forward/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/decoder/layer_5/encdec_attention/multihead_attention/q_transform/matrix -> transformer_0/decoder/layer_5/encdec_attention/multihead_attention/q_transform/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_5/encdec_attention/multihead_attention/q_transform/bias -> transformer_0/decoder/layer_5/encdec_attention/multihead_attention/q_transform/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_5/encdec_attention/multihead_attention/kv_transform/matrix -> transformer_0/decoder/layer_5/encdec_attention/multihead_attention/kv_transform/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_5/encdec_attention/multihead_attention/kv_transform/bias -> transformer_0/decoder/layer_5/encdec_attention/multihead_attention/kv_transform/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_5/encdec_attention/multihead_attention/output_transform/matrix -> transformer_0/decoder/layer_5/encdec_attention/multihead_attention/output_transform/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_5/encdec_attention/multihead_attention/output_transform/bias -> transformer_0/decoder/layer_5/encdec_attention/multihead_attention/output_transform/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_5/encdec_attention/layer_norm/scale -> transformer_0/decoder/layer_5/encdec_attention/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/decoder/layer_5/encdec_attention/layer_norm/offset -> transformer_0/decoder/layer_5/encdec_attention/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/decoder/layer_5/feed_forward/ffn_layer/input_layer/linear/matrix -> transformer_0/decoder/layer_5/feed_forward/ffn_layer/input_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_5/feed_forward/ffn_layer/input_layer/linear/bias -> transformer_0/decoder/layer_5/feed_forward/ffn_layer/input_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_5/feed_forward/ffn_layer/output_layer/linear/matrix -> transformer_0/decoder/layer_5/feed_forward/ffn_layer/output_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_5/feed_forward/ffn_layer/output_layer/linear/bias -> transformer_0/decoder/layer_5/feed_forward/ffn_layer/output_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_5/feed_forward/layer_norm/scale -> transformer_0/decoder/layer_5/feed_forward/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/decoder/layer_5/feed_forward/layer_norm/offset -> transformer_0/decoder/layer_5/feed_forward/layer_norm/offset:0
+2018-05-01 06:46:51.103857: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-05-01 06:46:51.370259: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Found device 0 with properties: 
+name: GeForce GTX TITAN X major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:05:00.0
+totalMemory: 11.92GiB freeMemory: 11.81GiB
+2018-05-01 06:46:51.370301: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX TITAN X, pci bus id: 0000:05:00.0, compute capability: 5.2)
+INFO:tensorflow:Finished batch 1 within 7.01899600029 seconds
+INFO:tensorflow:Finished batch 2 within 3.11778116226 seconds
+INFO:tensorflow:Finished batch 3 within 2.67802000046 seconds
+INFO:tensorflow:Finished batch 4 within 2.64574193954 seconds
+INFO:tensorflow:Finished batch 5 within 2.26335978508 seconds
+INFO:tensorflow:Finished batch 6 within 2.10454797745 seconds
+INFO:tensorflow:Finished batch 7 within 1.91575193405 seconds
+INFO:tensorflow:Finished batch 8 within 1.94350910187 seconds
+INFO:tensorflow:Finished batch 9 within 1.69925379753 seconds
+INFO:tensorflow:Finished batch 10 within 1.83914995193 seconds
+INFO:tensorflow:Finished batch 11 within 1.62049508095 seconds
+INFO:tensorflow:Finished batch 12 within 1.51686501503 seconds
+INFO:tensorflow:Finished batch 13 within 1.58459401131 seconds
+INFO:tensorflow:Finished batch 14 within 1.49298405647 seconds
+INFO:tensorflow:Finished batch 15 within 1.34703207016 seconds
+INFO:tensorflow:Finished batch 16 within 1.45204591751 seconds
+INFO:tensorflow:Finished batch 17 within 1.32966089249 seconds
+INFO:tensorflow:Finished batch 18 within 1.28290605545 seconds
+INFO:tensorflow:Finished batch 19 within 1.22149801254 seconds
+INFO:tensorflow:Finished batch 20 within 1.32174396515 seconds
+INFO:tensorflow:Finished batch 21 within 1.1928319931 seconds
+INFO:tensorflow:Finished batch 22 within 1.23368906975 seconds
+INFO:tensorflow:Finished batch 23 within 1.15520405769 seconds
+INFO:tensorflow:Finished batch 24 within 1.22374296188 seconds
+INFO:tensorflow:Finished batch 25 within 1.06143188477 seconds
+INFO:tensorflow:Finished batch 26 within 1.09340596199 seconds
+INFO:tensorflow:Finished batch 27 within 1.05114507675 seconds
+INFO:tensorflow:Finished batch 28 within 0.990999937057 seconds
+INFO:tensorflow:Finished batch 29 within 1.01956105232 seconds
+INFO:tensorflow:Finished batch 30 within 0.968247175217 seconds
+INFO:tensorflow:Finished batch 31 within 0.918730974197 seconds
+INFO:tensorflow:Finished batch 32 within 0.959595918655 seconds
+INFO:tensorflow:Finished batch 33 within 0.937668085098 seconds
+INFO:tensorflow:Finished batch 34 within 0.969341039658 seconds
+INFO:tensorflow:Finished batch 35 within 0.911720991135 seconds
+INFO:tensorflow:Finished batch 36 within 0.884683847427 seconds
+INFO:tensorflow:Finished batch 37 within 0.898426055908 seconds
+INFO:tensorflow:Finished batch 38 within 0.74211192131 seconds
+INFO:tensorflow:Finished batch 39 within 0.868922948837 seconds
+INFO:tensorflow:Finished batch 40 within 0.844839811325 seconds
+INFO:tensorflow:Finished batch 41 within 0.882943153381 seconds
+INFO:tensorflow:Finished batch 42 within 0.773660182953 seconds
+INFO:tensorflow:Finished batch 43 within 0.779972076416 seconds
+INFO:tensorflow:Finished batch 44 within 0.71847486496 seconds
+INFO:tensorflow:Finished batch 45 within 0.708284854889 seconds
+INFO:tensorflow:Finished batch 46 within 0.770956993103 seconds
+INFO:tensorflow:Finished batch 47 within 0.706750154495 seconds
+INFO:tensorflow:Finished batch 48 within 0.679675102234 seconds
+INFO:tensorflow:Finished batch 49 within 0.732791900635 seconds
+INFO:tensorflow:Finished batch 50 within 0.658395051956 seconds
+INFO:tensorflow:Finished batch 51 within 0.752217054367 seconds
+INFO:tensorflow:Finished batch 52 within 0.699692964554 seconds
+INFO:tensorflow:Finished batch 53 within 0.649252891541 seconds
+INFO:tensorflow:Finished batch 54 within 0.624459028244 seconds
+INFO:tensorflow:Finished batch 55 within 0.674365997314 seconds
+INFO:tensorflow:Finished batch 56 within 0.584102153778 seconds
+INFO:tensorflow:Finished batch 57 within 0.591839075089 seconds
+INFO:tensorflow:Finished batch 58 within 0.594472169876 seconds
+INFO:tensorflow:Finished batch 59 within 0.591488838196 seconds
+INFO:tensorflow:Finished batch 60 within 0.566904067993 seconds
+INFO:tensorflow:Finished batch 61 within 0.558996915817 seconds
+INFO:tensorflow:Finished batch 62 within 0.484331130981 seconds
+INFO:tensorflow:Finished batch 63 within 0.543957948685 seconds
+INFO:tensorflow:Finished batch 64 within 0.515130996704 seconds
+INFO:tensorflow:Finished batch 65 within 0.456484079361 seconds
+INFO:tensorflow:Finished batch 66 within 0.54025888443 seconds
+INFO:tensorflow:Finished batch 67 within 0.503147125244 seconds
+INFO:tensorflow:Finished batch 68 within 0.444455862045 seconds
+INFO:tensorflow:Finished batch 69 within 0.443261146545 seconds
+INFO:tensorflow:Finished batch 70 within 0.501675128937 seconds
+INFO:tensorflow:Finished batch 71 within 0.442177057266 seconds
+INFO:tensorflow:Finished batch 72 within 0.445115089417 seconds
+INFO:tensorflow:Finished batch 73 within 0.46070098877 seconds
+INFO:tensorflow:Finished batch 74 within 0.415863037109 seconds
+INFO:tensorflow:Finished batch 75 within 0.39418888092 seconds
+INFO:tensorflow:Finished batch 76 within 0.470318078995 seconds
+INFO:tensorflow:Finished batch 77 within 0.350615978241 seconds
+INFO:tensorflow:Finished batch 78 within 0.435145139694 seconds
+INFO:tensorflow:Finished batch 79 within 0.384276866913 seconds
+INFO:tensorflow:Finished batch 80 within 0.356357097626 seconds
+INFO:tensorflow:Finished batch 81 within 0.362504005432 seconds
+INFO:tensorflow:Finished batch 82 within 0.297533035278 seconds
+INFO:tensorflow:Finished batch 83 within 0.351239919662 seconds
+INFO:tensorflow:Finished batch 84 within 0.302988052368 seconds
+INFO:tensorflow:Finished batch 85 within 0.333755970001 seconds
+INFO:tensorflow:Finished batch 86 within 0.292714834213 seconds
+INFO:tensorflow:Finished batch 87 within 0.247800111771 seconds
+INFO:tensorflow:Finished batch 88 within 0.270732164383 seconds
+INFO:tensorflow:Finished batch 89 within 0.245050907135 seconds
+INFO:tensorflow:Finished batch 90 within 0.280898094177 seconds
+INFO:tensorflow:Finished batch 91 within 0.187261104584 seconds
+INFO:tensorflow:Finished batch 92 within 0.236521959305 seconds
+INFO:tensorflow:Finished batch 93 within 0.231026887894 seconds
+INFO:tensorflow:Finished batch 94 within 0.185881137848 seconds
+INFO:tensorflow:Decoding in 91.5149979591 seconds
+Loading /home/bzhang/.pro/.lib/neumt/network/transformer/wmten-de/work-extreme-transformer-target-ftn/github_submit//test/avg
+/opt/anaconda/anaconda2/lib/python2.7/site-packages/pandas/core/computation/__init__.py:18: UserWarning: The installed version of numexpr 2.4.5.dev0 is not supported in pandas and will be not be used
+The minimum supported version is 2.4.6
+
+  ver=ver, min_ver=_MIN_NUMEXPR_VERSION), UserWarning)
+INFO:tensorflow:Restoring model parameters from /home/bzhang/.pro/.lib/neumt/network/transformer/wmten-de/work-extreme-transformer-target-ftn/github_submit/test/avg/transformer.json
+INFO:tensorflow:restoring transformer/source_embedding -> transformer_0/source_embedding:0
+INFO:tensorflow:restoring transformer/target_embedding -> transformer_0/target_embedding:0
+INFO:tensorflow:restoring transformer/bias -> transformer_0/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_0/self_attention/multihead_attention/qkv_transform/matrix -> transformer_0/encoder/layer_0/self_attention/multihead_attention/qkv_transform/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_0/self_attention/multihead_attention/qkv_transform/bias -> transformer_0/encoder/layer_0/self_attention/multihead_attention/qkv_transform/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_0/self_attention/multihead_attention/output_transform/matrix -> transformer_0/encoder/layer_0/self_attention/multihead_attention/output_transform/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_0/self_attention/multihead_attention/output_transform/bias -> transformer_0/encoder/layer_0/self_attention/multihead_attention/output_transform/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_0/self_attention/layer_norm/scale -> transformer_0/encoder/layer_0/self_attention/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/encoder/layer_0/self_attention/layer_norm/offset -> transformer_0/encoder/layer_0/self_attention/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/encoder/layer_0/feed_forward/ffn_layer/input_layer/linear/matrix -> transformer_0/encoder/layer_0/feed_forward/ffn_layer/input_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_0/feed_forward/ffn_layer/input_layer/linear/bias -> transformer_0/encoder/layer_0/feed_forward/ffn_layer/input_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_0/feed_forward/ffn_layer/output_layer/linear/matrix -> transformer_0/encoder/layer_0/feed_forward/ffn_layer/output_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_0/feed_forward/ffn_layer/output_layer/linear/bias -> transformer_0/encoder/layer_0/feed_forward/ffn_layer/output_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_0/feed_forward/layer_norm/scale -> transformer_0/encoder/layer_0/feed_forward/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/encoder/layer_0/feed_forward/layer_norm/offset -> transformer_0/encoder/layer_0/feed_forward/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/encoder/layer_1/self_attention/multihead_attention/qkv_transform/matrix -> transformer_0/encoder/layer_1/self_attention/multihead_attention/qkv_transform/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_1/self_attention/multihead_attention/qkv_transform/bias -> transformer_0/encoder/layer_1/self_attention/multihead_attention/qkv_transform/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_1/self_attention/multihead_attention/output_transform/matrix -> transformer_0/encoder/layer_1/self_attention/multihead_attention/output_transform/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_1/self_attention/multihead_attention/output_transform/bias -> transformer_0/encoder/layer_1/self_attention/multihead_attention/output_transform/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_1/self_attention/layer_norm/scale -> transformer_0/encoder/layer_1/self_attention/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/encoder/layer_1/self_attention/layer_norm/offset -> transformer_0/encoder/layer_1/self_attention/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/encoder/layer_1/feed_forward/ffn_layer/input_layer/linear/matrix -> transformer_0/encoder/layer_1/feed_forward/ffn_layer/input_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_1/feed_forward/ffn_layer/input_layer/linear/bias -> transformer_0/encoder/layer_1/feed_forward/ffn_layer/input_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_1/feed_forward/ffn_layer/output_layer/linear/matrix -> transformer_0/encoder/layer_1/feed_forward/ffn_layer/output_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_1/feed_forward/ffn_layer/output_layer/linear/bias -> transformer_0/encoder/layer_1/feed_forward/ffn_layer/output_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_1/feed_forward/layer_norm/scale -> transformer_0/encoder/layer_1/feed_forward/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/encoder/layer_1/feed_forward/layer_norm/offset -> transformer_0/encoder/layer_1/feed_forward/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/encoder/layer_2/self_attention/multihead_attention/qkv_transform/matrix -> transformer_0/encoder/layer_2/self_attention/multihead_attention/qkv_transform/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_2/self_attention/multihead_attention/qkv_transform/bias -> transformer_0/encoder/layer_2/self_attention/multihead_attention/qkv_transform/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_2/self_attention/multihead_attention/output_transform/matrix -> transformer_0/encoder/layer_2/self_attention/multihead_attention/output_transform/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_2/self_attention/multihead_attention/output_transform/bias -> transformer_0/encoder/layer_2/self_attention/multihead_attention/output_transform/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_2/self_attention/layer_norm/scale -> transformer_0/encoder/layer_2/self_attention/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/encoder/layer_2/self_attention/layer_norm/offset -> transformer_0/encoder/layer_2/self_attention/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/encoder/layer_2/feed_forward/ffn_layer/input_layer/linear/matrix -> transformer_0/encoder/layer_2/feed_forward/ffn_layer/input_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_2/feed_forward/ffn_layer/input_layer/linear/bias -> transformer_0/encoder/layer_2/feed_forward/ffn_layer/input_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_2/feed_forward/ffn_layer/output_layer/linear/matrix -> transformer_0/encoder/layer_2/feed_forward/ffn_layer/output_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_2/feed_forward/ffn_layer/output_layer/linear/bias -> transformer_0/encoder/layer_2/feed_forward/ffn_layer/output_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_2/feed_forward/layer_norm/scale -> transformer_0/encoder/layer_2/feed_forward/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/encoder/layer_2/feed_forward/layer_norm/offset -> transformer_0/encoder/layer_2/feed_forward/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/encoder/layer_3/self_attention/multihead_attention/qkv_transform/matrix -> transformer_0/encoder/layer_3/self_attention/multihead_attention/qkv_transform/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_3/self_attention/multihead_attention/qkv_transform/bias -> transformer_0/encoder/layer_3/self_attention/multihead_attention/qkv_transform/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_3/self_attention/multihead_attention/output_transform/matrix -> transformer_0/encoder/layer_3/self_attention/multihead_attention/output_transform/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_3/self_attention/multihead_attention/output_transform/bias -> transformer_0/encoder/layer_3/self_attention/multihead_attention/output_transform/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_3/self_attention/layer_norm/scale -> transformer_0/encoder/layer_3/self_attention/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/encoder/layer_3/self_attention/layer_norm/offset -> transformer_0/encoder/layer_3/self_attention/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/encoder/layer_3/feed_forward/ffn_layer/input_layer/linear/matrix -> transformer_0/encoder/layer_3/feed_forward/ffn_layer/input_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_3/feed_forward/ffn_layer/input_layer/linear/bias -> transformer_0/encoder/layer_3/feed_forward/ffn_layer/input_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_3/feed_forward/ffn_layer/output_layer/linear/matrix -> transformer_0/encoder/layer_3/feed_forward/ffn_layer/output_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_3/feed_forward/ffn_layer/output_layer/linear/bias -> transformer_0/encoder/layer_3/feed_forward/ffn_layer/output_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_3/feed_forward/layer_norm/scale -> transformer_0/encoder/layer_3/feed_forward/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/encoder/layer_3/feed_forward/layer_norm/offset -> transformer_0/encoder/layer_3/feed_forward/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/encoder/layer_4/self_attention/multihead_attention/qkv_transform/matrix -> transformer_0/encoder/layer_4/self_attention/multihead_attention/qkv_transform/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_4/self_attention/multihead_attention/qkv_transform/bias -> transformer_0/encoder/layer_4/self_attention/multihead_attention/qkv_transform/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_4/self_attention/multihead_attention/output_transform/matrix -> transformer_0/encoder/layer_4/self_attention/multihead_attention/output_transform/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_4/self_attention/multihead_attention/output_transform/bias -> transformer_0/encoder/layer_4/self_attention/multihead_attention/output_transform/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_4/self_attention/layer_norm/scale -> transformer_0/encoder/layer_4/self_attention/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/encoder/layer_4/self_attention/layer_norm/offset -> transformer_0/encoder/layer_4/self_attention/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/encoder/layer_4/feed_forward/ffn_layer/input_layer/linear/matrix -> transformer_0/encoder/layer_4/feed_forward/ffn_layer/input_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_4/feed_forward/ffn_layer/input_layer/linear/bias -> transformer_0/encoder/layer_4/feed_forward/ffn_layer/input_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_4/feed_forward/ffn_layer/output_layer/linear/matrix -> transformer_0/encoder/layer_4/feed_forward/ffn_layer/output_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_4/feed_forward/ffn_layer/output_layer/linear/bias -> transformer_0/encoder/layer_4/feed_forward/ffn_layer/output_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_4/feed_forward/layer_norm/scale -> transformer_0/encoder/layer_4/feed_forward/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/encoder/layer_4/feed_forward/layer_norm/offset -> transformer_0/encoder/layer_4/feed_forward/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/encoder/layer_5/self_attention/multihead_attention/qkv_transform/matrix -> transformer_0/encoder/layer_5/self_attention/multihead_attention/qkv_transform/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_5/self_attention/multihead_attention/qkv_transform/bias -> transformer_0/encoder/layer_5/self_attention/multihead_attention/qkv_transform/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_5/self_attention/multihead_attention/output_transform/matrix -> transformer_0/encoder/layer_5/self_attention/multihead_attention/output_transform/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_5/self_attention/multihead_attention/output_transform/bias -> transformer_0/encoder/layer_5/self_attention/multihead_attention/output_transform/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_5/self_attention/layer_norm/scale -> transformer_0/encoder/layer_5/self_attention/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/encoder/layer_5/self_attention/layer_norm/offset -> transformer_0/encoder/layer_5/self_attention/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/encoder/layer_5/feed_forward/ffn_layer/input_layer/linear/matrix -> transformer_0/encoder/layer_5/feed_forward/ffn_layer/input_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_5/feed_forward/ffn_layer/input_layer/linear/bias -> transformer_0/encoder/layer_5/feed_forward/ffn_layer/input_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_5/feed_forward/ffn_layer/output_layer/linear/matrix -> transformer_0/encoder/layer_5/feed_forward/ffn_layer/output_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/encoder/layer_5/feed_forward/ffn_layer/output_layer/linear/bias -> transformer_0/encoder/layer_5/feed_forward/ffn_layer/output_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/encoder/layer_5/feed_forward/layer_norm/scale -> transformer_0/encoder/layer_5/feed_forward/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/encoder/layer_5/feed_forward/layer_norm/offset -> transformer_0/encoder/layer_5/feed_forward/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/decoder/layer_0/position_forward/ffn_layer/input_layer/linear/matrix -> transformer_0/decoder/layer_0/position_forward/ffn_layer/input_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_0/position_forward/ffn_layer/input_layer/linear/bias -> transformer_0/decoder/layer_0/position_forward/ffn_layer/input_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_0/position_forward/ffn_layer/output_layer/linear/matrix -> transformer_0/decoder/layer_0/position_forward/ffn_layer/output_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_0/position_forward/ffn_layer/output_layer/linear/bias -> transformer_0/decoder/layer_0/position_forward/ffn_layer/output_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_0/position_forward/z_project/matrix -> transformer_0/decoder/layer_0/position_forward/z_project/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_0/position_forward/z_project/bias -> transformer_0/decoder/layer_0/position_forward/z_project/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_0/position_forward/layer_norm/scale -> transformer_0/decoder/layer_0/position_forward/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/decoder/layer_0/position_forward/layer_norm/offset -> transformer_0/decoder/layer_0/position_forward/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/decoder/layer_0/encdec_attention/multihead_attention/q_transform/matrix -> transformer_0/decoder/layer_0/encdec_attention/multihead_attention/q_transform/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_0/encdec_attention/multihead_attention/q_transform/bias -> transformer_0/decoder/layer_0/encdec_attention/multihead_attention/q_transform/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_0/encdec_attention/multihead_attention/kv_transform/matrix -> transformer_0/decoder/layer_0/encdec_attention/multihead_attention/kv_transform/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_0/encdec_attention/multihead_attention/kv_transform/bias -> transformer_0/decoder/layer_0/encdec_attention/multihead_attention/kv_transform/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_0/encdec_attention/multihead_attention/output_transform/matrix -> transformer_0/decoder/layer_0/encdec_attention/multihead_attention/output_transform/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_0/encdec_attention/multihead_attention/output_transform/bias -> transformer_0/decoder/layer_0/encdec_attention/multihead_attention/output_transform/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_0/encdec_attention/layer_norm/scale -> transformer_0/decoder/layer_0/encdec_attention/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/decoder/layer_0/encdec_attention/layer_norm/offset -> transformer_0/decoder/layer_0/encdec_attention/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/decoder/layer_0/feed_forward/ffn_layer/input_layer/linear/matrix -> transformer_0/decoder/layer_0/feed_forward/ffn_layer/input_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_0/feed_forward/ffn_layer/input_layer/linear/bias -> transformer_0/decoder/layer_0/feed_forward/ffn_layer/input_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_0/feed_forward/ffn_layer/output_layer/linear/matrix -> transformer_0/decoder/layer_0/feed_forward/ffn_layer/output_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_0/feed_forward/ffn_layer/output_layer/linear/bias -> transformer_0/decoder/layer_0/feed_forward/ffn_layer/output_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_0/feed_forward/layer_norm/scale -> transformer_0/decoder/layer_0/feed_forward/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/decoder/layer_0/feed_forward/layer_norm/offset -> transformer_0/decoder/layer_0/feed_forward/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/decoder/layer_1/position_forward/ffn_layer/input_layer/linear/matrix -> transformer_0/decoder/layer_1/position_forward/ffn_layer/input_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_1/position_forward/ffn_layer/input_layer/linear/bias -> transformer_0/decoder/layer_1/position_forward/ffn_layer/input_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_1/position_forward/ffn_layer/output_layer/linear/matrix -> transformer_0/decoder/layer_1/position_forward/ffn_layer/output_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_1/position_forward/ffn_layer/output_layer/linear/bias -> transformer_0/decoder/layer_1/position_forward/ffn_layer/output_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_1/position_forward/z_project/matrix -> transformer_0/decoder/layer_1/position_forward/z_project/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_1/position_forward/z_project/bias -> transformer_0/decoder/layer_1/position_forward/z_project/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_1/position_forward/layer_norm/scale -> transformer_0/decoder/layer_1/position_forward/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/decoder/layer_1/position_forward/layer_norm/offset -> transformer_0/decoder/layer_1/position_forward/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/decoder/layer_1/encdec_attention/multihead_attention/q_transform/matrix -> transformer_0/decoder/layer_1/encdec_attention/multihead_attention/q_transform/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_1/encdec_attention/multihead_attention/q_transform/bias -> transformer_0/decoder/layer_1/encdec_attention/multihead_attention/q_transform/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_1/encdec_attention/multihead_attention/kv_transform/matrix -> transformer_0/decoder/layer_1/encdec_attention/multihead_attention/kv_transform/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_1/encdec_attention/multihead_attention/kv_transform/bias -> transformer_0/decoder/layer_1/encdec_attention/multihead_attention/kv_transform/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_1/encdec_attention/multihead_attention/output_transform/matrix -> transformer_0/decoder/layer_1/encdec_attention/multihead_attention/output_transform/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_1/encdec_attention/multihead_attention/output_transform/bias -> transformer_0/decoder/layer_1/encdec_attention/multihead_attention/output_transform/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_1/encdec_attention/layer_norm/scale -> transformer_0/decoder/layer_1/encdec_attention/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/decoder/layer_1/encdec_attention/layer_norm/offset -> transformer_0/decoder/layer_1/encdec_attention/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/decoder/layer_1/feed_forward/ffn_layer/input_layer/linear/matrix -> transformer_0/decoder/layer_1/feed_forward/ffn_layer/input_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_1/feed_forward/ffn_layer/input_layer/linear/bias -> transformer_0/decoder/layer_1/feed_forward/ffn_layer/input_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_1/feed_forward/ffn_layer/output_layer/linear/matrix -> transformer_0/decoder/layer_1/feed_forward/ffn_layer/output_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_1/feed_forward/ffn_layer/output_layer/linear/bias -> transformer_0/decoder/layer_1/feed_forward/ffn_layer/output_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_1/feed_forward/layer_norm/scale -> transformer_0/decoder/layer_1/feed_forward/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/decoder/layer_1/feed_forward/layer_norm/offset -> transformer_0/decoder/layer_1/feed_forward/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/decoder/layer_2/position_forward/ffn_layer/input_layer/linear/matrix -> transformer_0/decoder/layer_2/position_forward/ffn_layer/input_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_2/position_forward/ffn_layer/input_layer/linear/bias -> transformer_0/decoder/layer_2/position_forward/ffn_layer/input_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_2/position_forward/ffn_layer/output_layer/linear/matrix -> transformer_0/decoder/layer_2/position_forward/ffn_layer/output_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_2/position_forward/ffn_layer/output_layer/linear/bias -> transformer_0/decoder/layer_2/position_forward/ffn_layer/output_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_2/position_forward/z_project/matrix -> transformer_0/decoder/layer_2/position_forward/z_project/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_2/position_forward/z_project/bias -> transformer_0/decoder/layer_2/position_forward/z_project/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_2/position_forward/layer_norm/scale -> transformer_0/decoder/layer_2/position_forward/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/decoder/layer_2/position_forward/layer_norm/offset -> transformer_0/decoder/layer_2/position_forward/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/decoder/layer_2/encdec_attention/multihead_attention/q_transform/matrix -> transformer_0/decoder/layer_2/encdec_attention/multihead_attention/q_transform/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_2/encdec_attention/multihead_attention/q_transform/bias -> transformer_0/decoder/layer_2/encdec_attention/multihead_attention/q_transform/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_2/encdec_attention/multihead_attention/kv_transform/matrix -> transformer_0/decoder/layer_2/encdec_attention/multihead_attention/kv_transform/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_2/encdec_attention/multihead_attention/kv_transform/bias -> transformer_0/decoder/layer_2/encdec_attention/multihead_attention/kv_transform/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_2/encdec_attention/multihead_attention/output_transform/matrix -> transformer_0/decoder/layer_2/encdec_attention/multihead_attention/output_transform/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_2/encdec_attention/multihead_attention/output_transform/bias -> transformer_0/decoder/layer_2/encdec_attention/multihead_attention/output_transform/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_2/encdec_attention/layer_norm/scale -> transformer_0/decoder/layer_2/encdec_attention/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/decoder/layer_2/encdec_attention/layer_norm/offset -> transformer_0/decoder/layer_2/encdec_attention/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/decoder/layer_2/feed_forward/ffn_layer/input_layer/linear/matrix -> transformer_0/decoder/layer_2/feed_forward/ffn_layer/input_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_2/feed_forward/ffn_layer/input_layer/linear/bias -> transformer_0/decoder/layer_2/feed_forward/ffn_layer/input_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_2/feed_forward/ffn_layer/output_layer/linear/matrix -> transformer_0/decoder/layer_2/feed_forward/ffn_layer/output_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_2/feed_forward/ffn_layer/output_layer/linear/bias -> transformer_0/decoder/layer_2/feed_forward/ffn_layer/output_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_2/feed_forward/layer_norm/scale -> transformer_0/decoder/layer_2/feed_forward/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/decoder/layer_2/feed_forward/layer_norm/offset -> transformer_0/decoder/layer_2/feed_forward/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/decoder/layer_3/position_forward/ffn_layer/input_layer/linear/matrix -> transformer_0/decoder/layer_3/position_forward/ffn_layer/input_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_3/position_forward/ffn_layer/input_layer/linear/bias -> transformer_0/decoder/layer_3/position_forward/ffn_layer/input_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_3/position_forward/ffn_layer/output_layer/linear/matrix -> transformer_0/decoder/layer_3/position_forward/ffn_layer/output_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_3/position_forward/ffn_layer/output_layer/linear/bias -> transformer_0/decoder/layer_3/position_forward/ffn_layer/output_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_3/position_forward/z_project/matrix -> transformer_0/decoder/layer_3/position_forward/z_project/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_3/position_forward/z_project/bias -> transformer_0/decoder/layer_3/position_forward/z_project/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_3/position_forward/layer_norm/scale -> transformer_0/decoder/layer_3/position_forward/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/decoder/layer_3/position_forward/layer_norm/offset -> transformer_0/decoder/layer_3/position_forward/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/decoder/layer_3/encdec_attention/multihead_attention/q_transform/matrix -> transformer_0/decoder/layer_3/encdec_attention/multihead_attention/q_transform/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_3/encdec_attention/multihead_attention/q_transform/bias -> transformer_0/decoder/layer_3/encdec_attention/multihead_attention/q_transform/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_3/encdec_attention/multihead_attention/kv_transform/matrix -> transformer_0/decoder/layer_3/encdec_attention/multihead_attention/kv_transform/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_3/encdec_attention/multihead_attention/kv_transform/bias -> transformer_0/decoder/layer_3/encdec_attention/multihead_attention/kv_transform/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_3/encdec_attention/multihead_attention/output_transform/matrix -> transformer_0/decoder/layer_3/encdec_attention/multihead_attention/output_transform/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_3/encdec_attention/multihead_attention/output_transform/bias -> transformer_0/decoder/layer_3/encdec_attention/multihead_attention/output_transform/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_3/encdec_attention/layer_norm/scale -> transformer_0/decoder/layer_3/encdec_attention/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/decoder/layer_3/encdec_attention/layer_norm/offset -> transformer_0/decoder/layer_3/encdec_attention/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/decoder/layer_3/feed_forward/ffn_layer/input_layer/linear/matrix -> transformer_0/decoder/layer_3/feed_forward/ffn_layer/input_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_3/feed_forward/ffn_layer/input_layer/linear/bias -> transformer_0/decoder/layer_3/feed_forward/ffn_layer/input_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_3/feed_forward/ffn_layer/output_layer/linear/matrix -> transformer_0/decoder/layer_3/feed_forward/ffn_layer/output_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_3/feed_forward/ffn_layer/output_layer/linear/bias -> transformer_0/decoder/layer_3/feed_forward/ffn_layer/output_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_3/feed_forward/layer_norm/scale -> transformer_0/decoder/layer_3/feed_forward/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/decoder/layer_3/feed_forward/layer_norm/offset -> transformer_0/decoder/layer_3/feed_forward/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/decoder/layer_4/position_forward/ffn_layer/input_layer/linear/matrix -> transformer_0/decoder/layer_4/position_forward/ffn_layer/input_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_4/position_forward/ffn_layer/input_layer/linear/bias -> transformer_0/decoder/layer_4/position_forward/ffn_layer/input_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_4/position_forward/ffn_layer/output_layer/linear/matrix -> transformer_0/decoder/layer_4/position_forward/ffn_layer/output_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_4/position_forward/ffn_layer/output_layer/linear/bias -> transformer_0/decoder/layer_4/position_forward/ffn_layer/output_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_4/position_forward/z_project/matrix -> transformer_0/decoder/layer_4/position_forward/z_project/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_4/position_forward/z_project/bias -> transformer_0/decoder/layer_4/position_forward/z_project/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_4/position_forward/layer_norm/scale -> transformer_0/decoder/layer_4/position_forward/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/decoder/layer_4/position_forward/layer_norm/offset -> transformer_0/decoder/layer_4/position_forward/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/decoder/layer_4/encdec_attention/multihead_attention/q_transform/matrix -> transformer_0/decoder/layer_4/encdec_attention/multihead_attention/q_transform/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_4/encdec_attention/multihead_attention/q_transform/bias -> transformer_0/decoder/layer_4/encdec_attention/multihead_attention/q_transform/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_4/encdec_attention/multihead_attention/kv_transform/matrix -> transformer_0/decoder/layer_4/encdec_attention/multihead_attention/kv_transform/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_4/encdec_attention/multihead_attention/kv_transform/bias -> transformer_0/decoder/layer_4/encdec_attention/multihead_attention/kv_transform/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_4/encdec_attention/multihead_attention/output_transform/matrix -> transformer_0/decoder/layer_4/encdec_attention/multihead_attention/output_transform/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_4/encdec_attention/multihead_attention/output_transform/bias -> transformer_0/decoder/layer_4/encdec_attention/multihead_attention/output_transform/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_4/encdec_attention/layer_norm/scale -> transformer_0/decoder/layer_4/encdec_attention/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/decoder/layer_4/encdec_attention/layer_norm/offset -> transformer_0/decoder/layer_4/encdec_attention/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/decoder/layer_4/feed_forward/ffn_layer/input_layer/linear/matrix -> transformer_0/decoder/layer_4/feed_forward/ffn_layer/input_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_4/feed_forward/ffn_layer/input_layer/linear/bias -> transformer_0/decoder/layer_4/feed_forward/ffn_layer/input_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_4/feed_forward/ffn_layer/output_layer/linear/matrix -> transformer_0/decoder/layer_4/feed_forward/ffn_layer/output_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_4/feed_forward/ffn_layer/output_layer/linear/bias -> transformer_0/decoder/layer_4/feed_forward/ffn_layer/output_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_4/feed_forward/layer_norm/scale -> transformer_0/decoder/layer_4/feed_forward/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/decoder/layer_4/feed_forward/layer_norm/offset -> transformer_0/decoder/layer_4/feed_forward/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/decoder/layer_5/position_forward/ffn_layer/input_layer/linear/matrix -> transformer_0/decoder/layer_5/position_forward/ffn_layer/input_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_5/position_forward/ffn_layer/input_layer/linear/bias -> transformer_0/decoder/layer_5/position_forward/ffn_layer/input_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_5/position_forward/ffn_layer/output_layer/linear/matrix -> transformer_0/decoder/layer_5/position_forward/ffn_layer/output_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_5/position_forward/ffn_layer/output_layer/linear/bias -> transformer_0/decoder/layer_5/position_forward/ffn_layer/output_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_5/position_forward/z_project/matrix -> transformer_0/decoder/layer_5/position_forward/z_project/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_5/position_forward/z_project/bias -> transformer_0/decoder/layer_5/position_forward/z_project/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_5/position_forward/layer_norm/scale -> transformer_0/decoder/layer_5/position_forward/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/decoder/layer_5/position_forward/layer_norm/offset -> transformer_0/decoder/layer_5/position_forward/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/decoder/layer_5/encdec_attention/multihead_attention/q_transform/matrix -> transformer_0/decoder/layer_5/encdec_attention/multihead_attention/q_transform/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_5/encdec_attention/multihead_attention/q_transform/bias -> transformer_0/decoder/layer_5/encdec_attention/multihead_attention/q_transform/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_5/encdec_attention/multihead_attention/kv_transform/matrix -> transformer_0/decoder/layer_5/encdec_attention/multihead_attention/kv_transform/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_5/encdec_attention/multihead_attention/kv_transform/bias -> transformer_0/decoder/layer_5/encdec_attention/multihead_attention/kv_transform/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_5/encdec_attention/multihead_attention/output_transform/matrix -> transformer_0/decoder/layer_5/encdec_attention/multihead_attention/output_transform/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_5/encdec_attention/multihead_attention/output_transform/bias -> transformer_0/decoder/layer_5/encdec_attention/multihead_attention/output_transform/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_5/encdec_attention/layer_norm/scale -> transformer_0/decoder/layer_5/encdec_attention/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/decoder/layer_5/encdec_attention/layer_norm/offset -> transformer_0/decoder/layer_5/encdec_attention/layer_norm/offset:0
+INFO:tensorflow:restoring transformer/decoder/layer_5/feed_forward/ffn_layer/input_layer/linear/matrix -> transformer_0/decoder/layer_5/feed_forward/ffn_layer/input_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_5/feed_forward/ffn_layer/input_layer/linear/bias -> transformer_0/decoder/layer_5/feed_forward/ffn_layer/input_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_5/feed_forward/ffn_layer/output_layer/linear/matrix -> transformer_0/decoder/layer_5/feed_forward/ffn_layer/output_layer/linear/matrix:0
+INFO:tensorflow:restoring transformer/decoder/layer_5/feed_forward/ffn_layer/output_layer/linear/bias -> transformer_0/decoder/layer_5/feed_forward/ffn_layer/output_layer/linear/bias:0
+INFO:tensorflow:restoring transformer/decoder/layer_5/feed_forward/layer_norm/scale -> transformer_0/decoder/layer_5/feed_forward/layer_norm/scale:0
+INFO:tensorflow:restoring transformer/decoder/layer_5/feed_forward/layer_norm/offset -> transformer_0/decoder/layer_5/feed_forward/layer_norm/offset:0
+2018-05-01 06:48:29.910457: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-05-01 06:48:30.172876: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Found device 0 with properties: 
+name: GeForce GTX TITAN X major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:05:00.0
+totalMemory: 11.92GiB freeMemory: 11.81GiB
+2018-05-01 06:48:30.172903: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX TITAN X, pci bus id: 0000:05:00.0, compute capability: 5.2)
+INFO:tensorflow:Finished batch 1 within 7.28830599785 seconds
+INFO:tensorflow:Finished batch 2 within 2.75301718712 seconds
+INFO:tensorflow:Finished batch 3 within 2.32500195503 seconds
+INFO:tensorflow:Finished batch 4 within 2.2385327816 seconds
+INFO:tensorflow:Finished batch 5 within 2.14068198204 seconds
+INFO:tensorflow:Finished batch 6 within 1.92406606674 seconds
+INFO:tensorflow:Finished batch 7 within 2.03725814819 seconds
+INFO:tensorflow:Finished batch 8 within 1.94429397583 seconds
+INFO:tensorflow:Finished batch 9 within 1.96848607063 seconds
+INFO:tensorflow:Finished batch 10 within 1.89065504074 seconds
+INFO:tensorflow:Finished batch 11 within 1.78589606285 seconds
+INFO:tensorflow:Finished batch 12 within 1.66792011261 seconds
+INFO:tensorflow:Finished batch 13 within 1.46583580971 seconds
+INFO:tensorflow:Finished batch 14 within 1.45572519302 seconds
+INFO:tensorflow:Finished batch 15 within 1.47623705864 seconds
+INFO:tensorflow:Finished batch 16 within 1.35966897011 seconds
+INFO:tensorflow:Finished batch 17 within 1.42404603958 seconds
+INFO:tensorflow:Finished batch 18 within 1.38468313217 seconds
+INFO:tensorflow:Finished batch 19 within 1.46154379845 seconds
+INFO:tensorflow:Finished batch 20 within 1.31584310532 seconds
+INFO:tensorflow:Finished batch 21 within 1.23300886154 seconds
+INFO:tensorflow:Finished batch 22 within 1.28640699387 seconds
+INFO:tensorflow:Finished batch 23 within 1.22202682495 seconds
+INFO:tensorflow:Finished batch 24 within 1.19846200943 seconds
+INFO:tensorflow:Finished batch 25 within 1.15333294868 seconds
+INFO:tensorflow:Finished batch 26 within 1.17105603218 seconds
+INFO:tensorflow:Finished batch 27 within 1.07973003387 seconds
+INFO:tensorflow:Finished batch 28 within 1.09906101227 seconds
+INFO:tensorflow:Finished batch 29 within 1.14182496071 seconds
+INFO:tensorflow:Finished batch 30 within 1.12244200706 seconds
+INFO:tensorflow:Finished batch 31 within 1.05744194984 seconds
+INFO:tensorflow:Finished batch 32 within 1.02083206177 seconds
+INFO:tensorflow:Finished batch 33 within 1.02191090584 seconds
+INFO:tensorflow:Finished batch 34 within 1.01576304436 seconds
+INFO:tensorflow:Finished batch 35 within 0.917565107346 seconds
+INFO:tensorflow:Finished batch 36 within 0.990355968475 seconds
+INFO:tensorflow:Finished batch 37 within 0.86485004425 seconds
+INFO:tensorflow:Finished batch 38 within 1.01373696327 seconds
+INFO:tensorflow:Finished batch 39 within 0.935038089752 seconds
+INFO:tensorflow:Finished batch 40 within 0.91575884819 seconds
+INFO:tensorflow:Finished batch 41 within 0.956806898117 seconds
+INFO:tensorflow:Finished batch 42 within 0.852696895599 seconds
+INFO:tensorflow:Finished batch 43 within 1.01525902748 seconds
+INFO:tensorflow:Finished batch 44 within 0.84362912178 seconds
+INFO:tensorflow:Finished batch 45 within 0.820749998093 seconds
+INFO:tensorflow:Finished batch 46 within 0.74423789978 seconds
+INFO:tensorflow:Finished batch 47 within 0.721465110779 seconds
+INFO:tensorflow:Finished batch 48 within 0.751987934113 seconds
+INFO:tensorflow:Finished batch 49 within 0.790215015411 seconds
+INFO:tensorflow:Finished batch 50 within 0.677863121033 seconds
+INFO:tensorflow:Finished batch 51 within 0.687866210938 seconds
+INFO:tensorflow:Finished batch 52 within 0.774973869324 seconds
+INFO:tensorflow:Finished batch 53 within 0.870975971222 seconds
+INFO:tensorflow:Finished batch 54 within 0.66755604744 seconds
+INFO:tensorflow:Finished batch 55 within 0.746078014374 seconds
+INFO:tensorflow:Finished batch 56 within 0.682986021042 seconds
+INFO:tensorflow:Finished batch 57 within 0.639068841934 seconds
+INFO:tensorflow:Finished batch 58 within 0.608546972275 seconds
+INFO:tensorflow:Finished batch 59 within 0.75251698494 seconds
+INFO:tensorflow:Finished batch 60 within 0.651448011398 seconds
+INFO:tensorflow:Finished batch 61 within 0.774476051331 seconds
+INFO:tensorflow:Finished batch 62 within 0.635280847549 seconds
+INFO:tensorflow:Finished batch 63 within 0.635685920715 seconds
+INFO:tensorflow:Finished batch 64 within 0.638720035553 seconds
+INFO:tensorflow:Finished batch 65 within 0.504971981049 seconds
+INFO:tensorflow:Finished batch 66 within 0.509088039398 seconds
+INFO:tensorflow:Finished batch 67 within 0.577143907547 seconds
+INFO:tensorflow:Finished batch 68 within 0.529024839401 seconds
+INFO:tensorflow:Finished batch 69 within 0.489578008652 seconds
+INFO:tensorflow:Finished batch 70 within 0.487716197968 seconds
+INFO:tensorflow:Finished batch 71 within 0.513188123703 seconds
+INFO:tensorflow:Finished batch 72 within 0.612677097321 seconds
+INFO:tensorflow:Finished batch 73 within 0.448905944824 seconds
+INFO:tensorflow:Finished batch 74 within 0.533466100693 seconds
+INFO:tensorflow:Finished batch 75 within 0.4323990345 seconds
+INFO:tensorflow:Finished batch 76 within 0.464577913284 seconds
+INFO:tensorflow:Finished batch 77 within 0.421018838882 seconds
+INFO:tensorflow:Finished batch 78 within 0.384819030762 seconds
+INFO:tensorflow:Finished batch 79 within 0.338100910187 seconds
+INFO:tensorflow:Finished batch 80 within 0.443382024765 seconds
+INFO:tensorflow:Finished batch 81 within 0.326502084732 seconds
+INFO:tensorflow:Finished batch 82 within 0.330548048019 seconds
+INFO:tensorflow:Finished batch 83 within 0.374021053314 seconds
+INFO:tensorflow:Finished batch 84 within 0.258512020111 seconds
+INFO:tensorflow:Finished batch 85 within 0.290292978287 seconds
+INFO:tensorflow:Finished batch 86 within 0.186841964722 seconds
+INFO:tensorflow:Decoding in 93.5801680088 seconds
+Loading /home/bzhang/.pro/.lib/neumt/network/transformer/wmten-de/work-extreme-transformer-target-ftn/github_submit//test/avg
