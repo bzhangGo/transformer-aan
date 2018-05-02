@@ -18,5 +18,3 @@ The processed WMT14 en-de dataset can be found at <a href="https://drive.google.
 
 
 For any further comments or questions, please email <a href="mailto:zb@stu.xmu.edu.cn">Biao Zhang</a>.
-=======
->>>>>>> 9ac260ad3aac118d711fb00fec9beed007d8152a
