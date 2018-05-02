@@ -122,7 +122,9 @@ def transformer_decoder(inputs, memory, bias, mem_bias, params, pos=None, dtype=
         decoding_outputs = []
         for layer in range(params.num_decoder_layers):
             with tf.variable_scope("layer_%d" % layer):
+                # The Average Attention Network
                 with tf.variable_scope("position_forward"):
+                    # Cumulative Summing
                     if given_inputs is not None:
                         x_fwd = (x + given_inputs[layer]) / pos[0]
                         decoding_outputs.append(tf.expand_dims(x + given_inputs[layer], axis=0))
@@ -131,6 +133,7 @@ def transformer_decoder(inputs, memory, bias, mem_bias, params, pos=None, dtype=
                             x_fwd = tf.cumsum(x, axis=1) / pos[0]
                         else:
                             x_fwd = tf.matmul(pos[0], x)
+                    # FFN activation
                     y = ffn_layer(
                         layer_process(x_fwd, params.layer_preprocess),
                         params.filter_size,
@@ -138,10 +141,12 @@ def transformer_decoder(inputs, memory, bias, mem_bias, params, pos=None, dtype=
                         1.0 - params.relu_dropout,
                     )
 
+                    # Gating layer
                     z = layers.nn.linear(tf.concat([x, y], axis=-1), 
                         params.hidden_size*2, True, True, scope="z_project")
                     i, f = tf.split(z, [params.hidden_size, params.hidden_size], axis=-1)
                     y = tf.sigmoid(i) * x + tf.sigmoid(f) * y
+                    
                     x = residual_fn(x, y, 1.0 - params.residual_dropout)
                     x = layer_process(x, params.layer_postprocess)
 
