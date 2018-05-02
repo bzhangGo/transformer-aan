@@ -2,6 +2,7 @@
 source code for "Accelerating Neural Transformer via an Average Attention Network"
 
 Notice: the source code is developed upon <a href="https://github.com/thumt/THUMT">THUMT</a>
+<<<<<<< HEAD
 
 # file structure:
 `train.sh`: provides the training script with our used configuration.
@@ -17,3 +18,5 @@ The processed WMT14 en-de dataset can be found at <a href="https://drive.google.
 
 
 For any further comments or questions, please email <a href="mailto:zb@stu.xmu.edu.cn">Biao Zhang</a>.
+=======
+>>>>>>> 9ac260ad3aac118d711fb00fec9beed007d8152a
