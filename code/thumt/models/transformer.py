@@ -134,12 +134,15 @@ def transformer_decoder(inputs, memory, bias, mem_bias, params, pos=None, dtype=
                         else:
                             x_fwd = tf.matmul(pos[0], x)
                     # FFN activation
-                    y = ffn_layer(
-                        layer_process(x_fwd, params.layer_preprocess),
-                        params.filter_size,
-                        params.hidden_size,
-                        1.0 - params.relu_dropout,
-                    )
+                    if params.use_ffn:
+                        y = ffn_layer(
+                            layer_process(x_fwd, params.layer_preprocess),
+                            params.filter_size,
+                            params.hidden_size,
+                            1.0 - params.relu_dropout,
+                        )
+                    else:
+                        y = x_fwd
 
                     # Gating layer
                     z = layers.nn.linear(tf.concat([x, y], axis=-1), 
@@ -218,7 +221,7 @@ def model_graph(features, labels, mode, params, given_memory=None, given_src_mas
 
     if given_decoder is not None:
         dec_pos_bias_fwd = tf.cumsum(tgt_mask, axis=1)
-        dec_pos_bias_fwd = tf.where(tf.less_equal(dec_pos_bias_fwd,0.), tf.ones_like(dec_pos_bias_fwd), dec_pos_bias_fwd)
+        dec_pos_bias_fwd = tf.where(tf.less_equal(dec_pos_bias_fwd, 0.), tf.ones_like(dec_pos_bias_fwd), dec_pos_bias_fwd)
         dec_pos_bias_fwd = tf.expand_dims(tf.cast(dec_pos_bias_fwd, tf.float32), 2)
     else:
         if params.aan_mask:
@@ -229,11 +232,17 @@ def model_graph(features, labels, mode, params, given_memory=None, given_src_mas
             dec_pos_bias_fwd = tf.expand_dims(tf.cast(dec_pos_bias_fwd, tf.float32), 2)
 
     # Shift left
+    # If given_decoer is not None, indicating a inference procedure,
     if given_decoder is not None:
+        # given_position: starts from 1, a value greater than 1 means non-start position
         decoder_input = targets * tf.to_float(given_position > 1.)
         decoder_input = tf.tile(decoder_input, [1, tf.to_int32(given_position), 1])
     else:
         decoder_input = tf.pad(targets, [[0, 0], [1, 0], [0, 0]])[:, :-1, :]
+    # This is a lazy implementation, to assign the correct position embedding, I simply copy the
+    # current decoder input 'given_position' times, and assign the whole position embeddings,
+    # Only the last decoding value has the meaningful position embeddings
+    # TODO: With Average Attention Network, Decoder side position embedding may be unnecessary 
     decoder_input = layers.attention.add_timing_signal(decoder_input)
     if given_decoder is not None:
         decoder_input = decoder_input[:, -1:, :]
@@ -244,8 +253,10 @@ def model_graph(features, labels, mode, params, given_memory=None, given_src_mas
         decoder_input = tf.nn.dropout(decoder_input, keep_prob)
 
     encoder_output = transformer_encoder(encoder_input, enc_attn_bias, params, pos=[None])
+    # Given memory indicates the source-side encoding output during inference
     if given_memory is not None:
         encoder_output = given_memory
+    # During inference, the bias for decoder is exactly the decoding position 
     if given_position is not None:
         dec_pos_bias_fwd = given_position
     decoder_output, decoder_outputs = transformer_decoder(decoder_input, encoder_output,
@@ -260,6 +271,7 @@ def model_graph(features, labels, mode, params, given_memory=None, given_src_mas
     # SEARCH
     elif mode == "encoder":
         return encoder_output, src_mask
+    # Particularly for AAN decoding, we need the last decoding states for acceleration
     elif mode == "decoder":
         decoder_output = decoder_output[:, -1, :]
         logits = tf.matmul(decoder_output, weights, False, True)
@@ -397,6 +409,7 @@ class Transformer(interface.NMTModel):
             adam_epsilon=1e-9,
             clip_grad_norm=0.0,
             aan_mask=True,
+            use_ffn=False,
         )
 
         return params
