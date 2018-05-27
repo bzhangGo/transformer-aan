@@ -20,9 +20,9 @@ The processed WMT14 en-de dataset can be found at <a href="https://drive.google.
 * Tensorflow >= 1.4.1 (The used version for experiments in our paper is 1.4.1)
 
 ## Training Parameters
-'''
+```
 batch_size=3125,device_list=[0],eval_steps=5000,train_steps=100000,save_checkpoint_steps=1500,shared_embedding_and_softmax_weights=true,shared_source_target_embedding=false,update_cycle=8,aan_mask=True,use_ffn=False
-'''
+```
 1. train_steps: The total training steps, we used 100000 in most experiments.
 2. eval_steps: We obtain the approximate BLEU score on development set in every 5000 training steps.
 3. shared_embedding_and_softmax_weights: We shared the target-side word embedding and target-side pre-softmax parameters
@@ -39,13 +39,13 @@ batch_size=3125,device_list=[0],eval_steps=5000,train_steps=100000,save_checkpoi
 	- Without FFN, our AAN can generate very similar performance, as shown in Table 2 in our paper.
 	- Furthermore, we surprisingly find that in some cases, removing FFN improves AAN's performance.
 7. batch_size, device_list, update_cycle: This is used for parallel training. For one training step, the training procedure is as follows:  
-'''
+```
 for device_i in device_list: (this runs in parallel):  
 	for cycle_i in range(update_cycle): (this runs in sequence):  
 		train a batch of size `batch_size`
 		collect gradients and costs
 update the model
-'''
+```
 Therefore, the actual training batch size is: batch_size x len(device_list) x update_cycle.  
 * In our paper, we train the model in one GPU card, so we only set the device_list to [0]. For researchers who have more available GPU card, we encourage you to reduce the update_cycle and increase the device_list. This can improve your training speed. Particularly, training one model for WMT 14 en-de with `batch_size=3125, device_list=[0,1,2,3,4,5,6,7], update_cycle=1` takes less than 1 day.
 
@@ -53,7 +53,7 @@ Therefore, the actual training batch size is: batch_size x len(device_list) x up
 We have received several discussions from other researchers, and we'd like to show some great discussion here.
 1. Why AAN can accelerate the Transformer with a factor of 4~7?
 *The acceleration is for Transformer without cache strategy*
-- In theory,  
+In theory,  
 Suppose both the source and target sentence have a length of `n_s` and `n_t` respectively, and the model dimension is `d`. In one step of the Transformer decoder, the original model has a computational complexity of `O([n_tgt d^2] (self-attention) + [n_src d^2] (cross-attention) + [d^2] (FFN))`. By contrast, the AAN has a computational complexity of `O([d^2] (AAN FFN+Gate) + [n_src d^2] (cross-attention))`.   
 Therefore, the theoretical acceleration is around `(n_tgt + n_src) / n_src`, and the longer the target sentence is, the larger the acceleration will be.
 
