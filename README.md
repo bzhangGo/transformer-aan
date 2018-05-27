@@ -53,7 +53,6 @@ Therefore, the actual training batch size is: batch_size x len(device_list) x up
 We have received several discussions from other researchers, and we'd like to show some great discussion here.
 1. Why AAN can accelerate the Transformer with a factor of 4~7?  
 *The acceleration is for Transformer without cache strategy*  
-
 In theory,  
 Suppose both the source and target sentence have a length of `n_s` and `n_t` respectively, and the model dimension is `d`. In one step of the Transformer decoder, the original model has a computational complexity of `O([n_tgt d^2] (self-attention) + [n_src d^2] (cross-attention) + [d^2] (FFN))`. By contrast, the AAN has a computational complexity of `O([d^2] (AAN FFN+Gate) + [n_src d^2] (cross-attention))`.   
 Therefore, the theoretical acceleration is around `(n_tgt + n_src) / n_src`, and the longer the target sentence is, the larger the acceleration will be.
