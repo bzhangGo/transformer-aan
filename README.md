@@ -7,7 +7,7 @@ The source code is developed upon <a href="https://github.com/thumt/THUMT">THUMT
 # About AAN Structure
 We introduce two sub-layers for AAN in our ACL paper: one FFN layer (Eq. (1)) and one gating layer (Eq. (2)). However, after our extensive experiments, we observe that **the FFN layer is redundant and can be removed without loss of translation quality**. In addition, removing FFN layer reduces the amount of model parameters and slightly improves the training speed. It also largely improves the decoding speed. 
 
-**For re-implementation, we suggest other researchers to use the AAN model without the FFN sub-layer!**
+**For re-implementation, we suggest other researchers to use the AAN model without the FFN sub-layer!** See how we [disable this layer](https://github.com/bzhangGo/transformer-aan/blob/master/code/thumt/models/transformer.py#L137).
 
 ## File structure:
 `train.sh`: provides the training script with our used configuration.
@@ -83,4 +83,4 @@ Please cite the following paper:
 
 ## Contact
 
-For any further comments or questions about AAN, please email <a href="mailto:zb@stu.xmu.edu.cn">Biao Zhang</a>.
+For any further comments or questions about AAN, please email <a href="mailto:b.zhang@ed.ac.uk">Biao Zhang</a>.
