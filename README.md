@@ -9,6 +9,12 @@ We introduce two sub-layers for AAN in our ACL paper: one FFN layer (Eq. (1)) an
 
 **For re-implementation, we suggest other researchers to use the AAN model without the FFN sub-layer!** See how we [disable this layer](https://github.com/bzhangGo/transformer-aan/blob/master/code/thumt/models/transformer.py#L137).
 
+# Other Implementations
+* [Marian](https://github.com/marian-nmt/marian): an efficient NMT toolkit implemented by C++.
+* [Neutron](https://github.com/anoidgit/transformer): a pytorch NMT toolkit
+* [translate](https://github.com/pytorch/translate): a fairseq-based NMT translation toolkit
+* [OpenNMT](https://github.com/OpenNMT/OpenNMT-py): a pytorch NMT toolkit
+
 ## File structure:
 `train.sh`: provides the training script with our used configuration.
 `test.sh`: provides the testing script.
